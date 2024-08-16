@@ -13,6 +13,7 @@ import Press from "./pages/Admin/Press";
 import Inquiries from "./pages/Admin/Inquiries";
 import Blog from "./pages/Admin/Blog";
 import AgentBlog from "./pages/AgentBlog";
+import PropertyPressDetail from "./pages/PropertyPressDetail";
 import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
@@ -75,6 +76,7 @@ function App() {
           <Route path="mls-listing" element={<Mls />} />
           <Route path="mls-detail/:id" element={<MlsPropertyDetail />} />
           <Route path="/propertypress" element={<PropertyPress />} />
+          <Route path="/propertypress/:id" element={<PropertyPressDetail />} />
           <Route path="/searchcommunity" element={<SearchCommunity />} />
           <Route path="/agent/blog/:id" element={<AgentBlog />} />
           <Route path="*" element={<NotFound />} />
